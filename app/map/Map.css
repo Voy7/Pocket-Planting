@@ -1,0 +1,151 @@
+#map {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#map #left {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#g-map {
+  width: 100%;
+  height: 100%;
+  background: rgb(30, 30, 30);
+}
+
+#map #search-loc {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#map #search-loc input {
+  width: 230px;
+  margin: 0;
+  padding: .2em .4em;
+  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+#map #search-loc button {
+  margin: 0;
+  padding: .2em .4em;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(0, 174, 174);
+  border: none;
+  cursor: pointer;
+}
+
+#map #chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 15px 10px;
+  background: rgb(20, 20, 20);
+  border: 1px solid gray;
+}
+
+#map #chat form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 80%;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+#map #chat form input {
+  width: 100%;
+  padding: .15em .4em;
+  font-size: 1rem;
+  color: rgb(200, 200, 200);
+  background-color: rgb(40, 40, 40);
+  border: none;
+}
+
+#map #chat form button {
+  padding: 0 .5em;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgb(105, 105, 175);
+  border: none;
+  cursor: pointer;
+}
+
+#map #chat #convo {
+  color: aqua;
+}
+
+#map #sidebar {
+  width: 50vw;
+  height: 100%;
+  background-color: rgb(25, 25, 25);
+  border: 1px solid gray;
+}
+
+#map #sidebar h2 {
+  margin: 0;
+  padding: .5em;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(0, 78, 0);
+}
+
+#map #items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 20px;
+  padding: 50px;
+}
+
+#map #items .item {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 10px;
+}
+
+#map .item svg {
+  width: 30px;
+  height: 30px;
+  color: rgb(128, 128, 255);
+}
+
+#map .item .right h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: rgb(128, 128, 255);
+}
+
+#map .item .right p {
+  font-size: 1.05rem;
+  color: gray;
+}
+
+
+
+
+a[href^="http://maps.google.com/maps"] { display: none !important }
+a[href^="https://maps.google.com/maps"] { display: none !important }
+.gmnoprint a, .gmnoprint span, .gm-style-cc { display: none; }
+.gmnoprint div { background: none !important; }
