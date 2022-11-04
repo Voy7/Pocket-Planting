@@ -45,7 +45,7 @@ export default function Map() {
             <div id="g-map"></div>
             <div id="chat">
               <div id="convo">
-                <p>Hi there, I can answers any questions you have!</p>
+                <p>Hi there, I can answer any questions you have!</p>
               </div>
               <form>
                 <input type="text" placeholder="Your Question" />

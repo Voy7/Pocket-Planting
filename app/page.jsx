@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
@@ -31,6 +32,9 @@ export default function Home() {
 
   return (
     <>
+      <div id="welcome-loading">
+        <Image src="/loading.svg" alt="Loading" width="100" height="100" />
+      </div>
       <div id="welcome" className="welcome">
         <div id="wrapper" className="welcome-wrapper">
           <h1>Welcome to HuskieHack</h1>
